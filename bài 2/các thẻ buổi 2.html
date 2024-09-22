@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>các thẻ buổi 2</title>
+</head>
+<body>
+    <!-- thẻ <a href = " "> là thẻ gán đường link tại đoạn văn bản nào đó với thuộc tính là href là giá trị của thuộc tính là đường link dẫn đến trang web đó -->
+    <!-- thuộc tính target với value là _self thẻ <a> mở trang web mới tại ngay chính web của mình -->
+    <p>Xem tài liêu: <a href="https://www.google.com.vn/?hl=vi"target ="_self">Tại đây</a></p>
+     <!-- thuộc tính target với value là _blank thẻ <a> mở trang web mới tại tab khác-->
+    <p>Xem tài liêu: <a href="https://www.google.com.vn/?hl=vi"target ="_blank">Tại đây</a></p>
+    <!-- thuộc tính title của thẻ <a> dùng để chú thích cho người dùng là link này như nào -->
+    <!-- thuộc tính title còn có thể áp dụng cho các tag khác -->
+    <p>Xem tài liêu: <a href="https://www.google.com.vn/?hl=vi"target ="_blank"title="Đây là link sang trang Google">Tại đây</a></p>
+    <!-- thẻ img dùng để chèn ảnh với thuộc tính src có value là đường link dẫn đến ảnh -->
+    <img src = "https://cdn-main.28tech.com.vn/media/anh-khoa-hoc/lo_trinh_khoa_hoc/anh%20dai%20dien.png">
+    <!-- thẻ img còn có thuộc tính alt(thay thế)văn bản thay thế cho hình ảnh khi đường dẫn ảnh bị lỗi -->
+    <img src = "https://cdn-.28tech.com.vn/media/anh-khoa-hoc/lo_trinh_khoa_hoc/anh%20dai%20dien.palng"alt="đây là ảnh về 28tech">
+    <!-- thẻ img với đường link dẫn ảnh cùng cấp -->
+     <img src = "Nitro_Wallpaper_06_3840x2400.jpg">
+     <!-- ảnh nằm trong một file cùng cấp ở đây là file hình ảnh -->
+     <img src = "hình ảnh/image.jpg">
+<!-- ảnh nằm trong một file khác hẳn cấp thì ../để thoát ra file có cấp hiện tại (../tùy thuộc vào file ở cấp nào) -->
+     <img src = "../image 3.jpg">
+<!-- cách tự tùy biến thì dùng "/" -->
+     <img src ="/bài 2/hình ảnh/image.jpg">
+     <!-- kết hơp thẻ <a> và thẻ <img> để gán link vào ảnh -->
+     <a href = "https://28tech.com.vn/" target = "_blank">
+        <img src = "https://cdn-main.28tech.com.vn/media/anh-khoa-hoc/lo_trinh_khoa_hoc/anh%20dai%20dien.png">
+    </a>
+    <!-- thẻ chèn video với thuộc tính width và height để chỉnh chiều cao và chiều rông-->
+     <!-- thêm thuộc tính controls để có chức năng điều khiển video -->
+<!-- thêm thuộc tính loop để lặp lại video -->
+ <!-- thuộc tính autoplay để phát lại video -->
+<!-- thuộc tính muted để tắt tiếng khi tự động phát  -->
+    <video width = "320" height = "240"controls loop autoplay muted>
+        <!-- src đã cùng cấp với file html -->
+         <!-- thẻ source có thuộc tính scr để link video ở đây là cùng cấp còn thuộc tính type để value là video và kiểu video -->
+          <!-- các type video mpeg,ogg,webm -->
+           <!-- type là mp4 -->
+        <source src = "test.mp4" type = "video/mp4" >
+    </video>
+    <!-- thẻ audio dùng đẻ chèn audio có các thuộc tính giống thể video -->
+    <audio controls loop autoplay muted>
+        <!-- thuộc tính src là đường dẫn còn type mpeg, ogg, webm, wav -->
+        <source src = "demo audio.mp3" type = "audio/mpeg">
+    </audio>
+</body>
+</html>

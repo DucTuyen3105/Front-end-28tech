@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- - các thuộc tính của forms -->
+    <!-- action: Thuộc tính action xác định hành động sẽ được thực hiện khi biểu mẫu được gửi. Giá trị là một đường dẫn. Thông thường, dữ liệu biểu mẫu được gửi đến tệp trên máy chủ khi người dùng nhấp vào nút gửi. -->
+    <form action ="https://www.w3schools.com/action_page.php">
+        <input name = "ho_ten">
+        <input type ="submit" value = "gửi">
+        
+    </form>
+    <form action ="https://www.w3schools.com/action_page.php" target = "_self">
+        <input name = "ho_ten">
+        <input type ="submit" value = "gửi">
+        
+    </form>
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank">
+        <input name = "ho_ten">
+        <input type ="submit" value = "gửi">
+    </form>
+    <!-- Phương thức GET:
+    Nối dữ liệu biểu mẫu vào URL, theo cặp name/value
+    KHÔNG BAO GIỜ sử dụng GET để gửi dữ liệu bảo mật. Như tài khoản, mật khẩu.
+    Độ dài của URL bị giới hạn (2048 ký tự) -->
+    <!-- note: không ghi method với value của method thì mặc định là phương thức get -->
+     <!-- Phương thức Post
+     Dữ liệu biểu mẫu đã gửi không được hiển thị trong URL
+     POST không có giới hạn về kích thước và có thể được sử dụng để gửi một lượng lớn dữ liệu. -->
+     <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "POST">
+        <input name = "ho_ten">
+        <input type ="submit" value = "gửi">
+    </form>
+     <!-- note: khi sử dụng phương thức get thì reload lại trang web vẫn giữ nguyên dữ liệu còn phương thức post thì ngược lại -->
+     <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "POST">
+        <input name = "ho_ten">
+        <input type ="submit" value = "gửi">
+    </form>
+    <!-- autocomplete: Khi bật tính năng tự động điền, trình duyệt sẽ tự động gợi ý các giá trị dựa trên các giá trị mà người dùng đã nhập trước đó. -->
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "POST" autocomplete = "on">
+        <input name = "ho_ten">
+        <input type ="submit" value = "gửi">
+    </form>
+    <!-- novalidate: Thuộc tính này đặc tả dữ liệu form không cần phải kiểm tra tính chính xác dữ liệu khi gửi đi. Ví dụ email không cần nhập đúng định dạng vẫn gửi được. -->
+     <!-- nếu không có novalidate thì nhập sai submit thì không gửi được về backend  -->
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "POST" autocomplete = "on" novalidate>
+        <input name = "my_email" type = "email">
+        <input type ="submit" value = "gửi">
+
+    </form>
+    <!-- Form Elements (Những element trong form) -->
+    <!-- <input>
+    Có thể được hiển thị theo nhiều cách, tùy thuộc vào thuộc tính type.
+    Mặc định type=”text” - kiểu mặc định-->
+    
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "POST">
+        <input name = "ho_ten" type = "text">
+        <input type ="submit" value = "gửi">
+    </form>
+    <!-- <label>
+        Phần tử <label> xác định nhãn cho một số element trong biểu mẫu. Để người dùng hiểu hơn về element đó. -->
+<!-- Thuộc tính for của thẻ <label> phải bằng thuộc tính id của phần tử <input> để liên kết chúng lại với nhau. Khi đó, click vào <label> 
+    thì con trỏ sẽ tự động focus vào ô input đó (Mở rộng ra có thể áp dụng cho một số kiểu element khác, không chỉ áp dụng cho input). -->
+     <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "POST">
+    <label for = "fullname">Họ tên</label>
+    <input id = "fullname" name = "ho_ten" type = "text">
+    <input type ="submit" value = "gửi">
+    </form>
+</body>
+</html>

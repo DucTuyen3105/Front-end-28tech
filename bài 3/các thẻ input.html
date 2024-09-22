@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text">: Dùng để nhập text.
+<input type="email">: Dùng để nhập email.
+<input type="password">: Dùng để nhập mật khẩu.
+<input type="number">: Dùng để nhập số, không nhập được chữ cái.
+<input type="date">: Dùng để chọn: năm, tháng, ngày.
+<input type="time">: Dùng để chọn: giờ, phút, giây.
+<input type="datetime-local">: Dùng để chọn: năm, tháng, ngày, giờ, phút, giây.
+<input type="file">: Dùng để tải file lên.
+<input type="checkbox">: Các hộp kiểm cho phép người dùng chọn KHÔNG hoặc NHIỀU tùy chọn trong số các lựa chọn hạn chế -->
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <input name = "mat_khau" type = "password">
+        <input type = "submit" name = "gửi">
+    </form>
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <input name = "số" type = "number">
+        <input type = "submit" name = "gửi">
+    </form>
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <input name = "ngày đi" type = "date">
+        <input time = "thời gian đi" type = "time">
+        <input name = "ngày về" type = "date">
+        <input time = "thời gian về" type = "time">
+        <input type = "submit" name = "gửi">
+    </form>
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <input name = "ngày đi" type = "datetime-local">
+        <input name = "ngày về" type = "datetime-local">
+        <input type = "submit" name = "gửi">
+    </form>
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <input name = "gửi file" type = "file">
+        <input type = "submit" name = "gửi">
+    </form>
+    <!--check box là chọn được nhiều đáp án -->
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <p>Những ngôn ngữ lập trình bạn đã học: </p>
+        <input type = "checkbox" id = "ngonnguC" name ="language" value ="c">
+        <label for = "ngonnguC">Ngôn ngữ C</label><br>
+
+        <input type = "checkbox" id = "ngonnguJava" name ="language" value ="Java">
+        <label for = "ngonnguJava">Ngôn ngữ Java</label><br>
+
+        <input type = "checkbox" id = "ngonnguPHP" name ="language" value ="PHP">
+        <label for = "ngonnguPHP">Ngôn ngữ PHP</label><br>
+        <button>Gửi</button>
+    </form>
+    
+
+
+</body>
+</html>

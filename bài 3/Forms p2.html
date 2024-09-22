@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- element select của form -->
+        <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+            <label for = "fullname">Họ tên: </label>
+            <input id = "fullname" name = "ho_ten" type = "text">
+            <label for = "fullname">Họ tên: </label>
+            <input type ="submit" value = "gửi">
+            <label for = "">Màu sắc: </label>
+            <!-- <select>
+                Hiển thị dạng danh sách thả xuống (dropdown)
+                Các thẻ <option> xác định một tùy chọn có thể được chọn. Theo mặc định, mục đầu tiên trong danh sách thả xuống sẽ được chọn.
+                Để thay đổi mặc định lựa chọn thì thêm thuộc tính “selected” vào <option> muốn chọn mặc định.
+                Sử dụng thuộc tính size để chỉ định số lượng giá trị hiển thị.
+                Sử dụng thuộc tính “multiple” để cho phép người dùng chọn nhiều giá trị. -->
+            <!-- thuộc tính name với value là cái để gửi lên servel -->
+             <!-- thuộc tính size với value là miền giá trị thể hiện -->
+              <!-- thuộc tính multiple để cho phép người dùng chọn nhiều giá trị (nằm trong thẻ select và giữ phím ctr và chỉ áp dụng cho phương thức get)-->
+            <select name ="color" size = "3" multiple> 
+                <!-- option thì phải có thuộc tính value để gửi lên servel ( vì không nhập được )) -->
+                <option value = "yellow">màu vàng</option>
+                <option selected value = "purple">màu tím</option>
+                <option value = "red">màu đỏ</option>
+            </select>
+        
+            </form>
+            <!-- thẻ area để ghi chú trên nhiều dòng  -->
+             <!-- thuộc tính row  để giới hạn số dòng có thể thấy khi nhập-->
+              <!-- thuộc tính col để giới hạn chiều ngang của vùng text (lấy theo số lượng kí tự)-->
+            <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+                <textarea name = "ghi chú" row = "5" cols = "100  ">
+                </textarea>
+                <input type ="submit" value = "gửi">
+            
+            </form>
+        </form>
+        <!-- <button>
+            Thẻ <button> xác định nút có thể nhấp thay cho thẻ <input> thuộc tính submit -->
+            
+        <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+            <textarea name = "ghi chú" row = "5" cols = "100  ">
+            </textarea>
+            <button>gửi</button>
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="radio">: Các nút radio cho phép người dùng CHỈ chọn MỘT trong số các lựa chọn. -->
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <p>Chọn ngôn ngữ bạn thích nhất: </p>
+        <input type = "radio" id = "ngonnguC" name ="language" value ="c">
+        <label for = "ngonnguC">Ngôn ngữ C</label><br>
+
+        <input type = "radio" id = "ngonnguJava" name ="language" value ="Java">
+        <label for = "ngonnguJava">Ngôn ngữ Java</label><br>
+
+        <input type = "radio" id = "ngonnguPHP" name ="language" value ="PHP">
+        <label for = "ngonnguPHP">Ngôn ngữ PHP</label><br>
+        <button>Gửi</button>
+    </form>
+    <!-- <input type="range">: Tạo thanh trượt giá trị. Phạm vi mặc định là từ 0 đến 100. Step mặc định là 1. -->
+    <form action ="https://www.w3schools.com/action_page.php" target = "_blank" method = "GET">
+        <!-- có thể thay đổi cột mốc âm lượng và bước nhảy mỗi lần di bằng thuộc tính min max step -->
+        <input type = "range" name = "volume" min = "0" max ="100" step = "5">
+        <button>gửi</button>
+    </form>
+</body>
+</html>
